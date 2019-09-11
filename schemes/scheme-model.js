@@ -33,7 +33,9 @@ function add(schemeData) {
     });
 }
 
-function addStep(stepData, id) {}
+function addStep(stepData, id) {
+  return db("steps").insert(stepData);
+}
 
 function update(changes, id) {
   return db("schemes")
